@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=1]
+[ext_resource path="res://src/script/Dialogo.gd" type="Script" id=2]
+[ext_resource path="res://font/Pixellari.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://font/Pixellari.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+outline_color = Color( 0.823529, 0.156863, 0.156863, 1 )
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 23
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 21
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 21
+font_data = ExtResource( 3 )
+
+[node name="Dialogo" type="Node2D"]
+position = Vector2( 0.0835218, 0 )
+script = ExtResource( 2 )
+
+[node name="TextInterfaceEngine" type="ReferenceRect" parent="."]
+margin_left = 45.0
+margin_top = 426.587
+margin_right = 986.0
+margin_bottom = 517.587
+border_width = 4.5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+FONT = SubResource( 2 )
+
+[node name="Nome" type="Label" parent="."]
+margin_left = 46.6223
+margin_top = 397.109
+margin_right = 151.622
+margin_bottom = 421.109
+custom_fonts/font = SubResource( 3 )
+text = "Nome"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Done" type="LinkButton" parent="."]
+visible = false
+margin_left = 906.709
+margin_top = 531.215
+margin_right = 988.709
+margin_bottom = 553.215
+focus_mode = 2
+custom_fonts/font = SubResource( 4 )
+text = "Finalizar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="LinkButton" parent="."]
+visible = false
+margin_left = 909.665
+margin_top = 529.111
+margin_right = 988.665
+margin_bottom = 551.111
+custom_fonts/font = SubResource( 5 )
+text = "Avançar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Done" to="." method="_onDone"]
+[connection signal="pressed" from="Next" to="." method="_onNext"]

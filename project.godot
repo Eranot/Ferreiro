@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Forja"
+run/main_scene="res://src/scene/Outside.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/height=576
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/GodotTIE/plugin.cfg" )
+
+[global]
+
+sce=false
+scene=false
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
