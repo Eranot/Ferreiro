@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sword.png-de398a5533d0af8e90ce1af31ef791af.stex"
+path="res://.import/forja.png-80625991b32fdc1e9036b34f1e866f7c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/weapon/sword.png"
-dest_files=[ "res://.import/sword.png-de398a5533d0af8e90ce1af31ef791af.stex" ]
+source_file="res://src/sprite/background/forja.png"
+dest_files=[ "res://.import/forja.png-80625991b32fdc1e9036b34f1e866f7c.stex" ]
 
 [params]
 

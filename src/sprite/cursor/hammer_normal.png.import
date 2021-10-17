@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sword.png-de398a5533d0af8e90ce1af31ef791af.stex"
+path="res://.import/hammer_normal.png-2598ae1e55dd3037f083537081210164.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/weapon/sword.png"
-dest_files=[ "res://.import/sword.png-de398a5533d0af8e90ce1af31ef791af.stex" ]
+source_file="res://src/sprite/cursor/hammer_normal.png"
+dest_files=[ "res://.import/hammer_normal.png-2598ae1e55dd3037f083537081210164.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
