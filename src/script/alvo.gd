@@ -1,9 +1,12 @@
 extends Area2D
 
+export(float)  var timeUntilOver = 1.5
+
 onready var Fogo = preload("res://src/object/Fogo.tscn")
 
 func _ready():
-	pass # Replace with function body.
+	yield(get_tree().create_timer(timeUntilOver), "timeout")
+	onLifeTimeOver()
 
 func _on_Alvo_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
@@ -12,7 +15,6 @@ func _on_Alvo_input_event(viewport, event, shape_idx):
 		givePointsToParent(1)
 		queue_free()
 		get_parent().remove_child(self)
-		
 
 func spawnFogo():
 	var fogo = Fogo.instance()
