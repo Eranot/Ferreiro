@@ -13,4 +13,4 @@ scale = Vector2( 0.53, 0.53 )
 texture = ExtResource( 1 )
 
 [node name="Dialogo" parent="." instance=ExtResource( 2 )]
-nextScene = "res://src/scene/Forja.tscn"
+nextScene = "res://src/scene/forja/ForjaMachado.tscn"

@@ -11,8 +11,8 @@ var pontos = 0
 
 func _ready():
 	Input.set_custom_mouse_cursor(cursorNormal, Input.CURSOR_ARROW, Vector2(0, 10))
-	$Espada.connect("aumentarPontos", self, "_aumentarPontos")
-	$Espada.connect("onFinishFase", self, "_onFinishFase")
+	$Arma.connect("aumentarPontos", self, "_aumentarPontos")
+	$Arma.connect("onFinishFase", self, "_onFinishFase")
 
 func _exit_tree():
 	Input.set_custom_mouse_cursor(null, Input.CURSOR_ARROW, Vector2(0, 10))

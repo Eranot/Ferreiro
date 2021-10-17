@@ -11,7 +11,7 @@ antialiased = false
 font_path = "res://font/Pixellari.ttf"
 
 [sub_resource type="DynamicFont" id=2]
-size = 29
+size = 26
 outline_color = Color( 0.823529, 0.156863, 0.156863, 1 )
 font_data = SubResource( 1 )
 
@@ -55,6 +55,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+BREAK_ON_MAX_LINES = false
 SCROLL_SKIPPED_LINES = true
 FONT = SubResource( 2 )
 

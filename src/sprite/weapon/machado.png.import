@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/forja.png-80625991b32fdc1e9036b34f1e866f7c.stex"
+path="res://.import/machado.png-71a6963369edf819f50a39d6d073f6c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/background/forja.png"
-dest_files=[ "res://.import/forja.png-80625991b32fdc1e9036b34f1e866f7c.stex" ]
+source_file="res://src/sprite/weapon/machado.png"
+dest_files=[ "res://.import/machado.png-71a6963369edf819f50a39d6d073f6c1.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
