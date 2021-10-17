@@ -1,6 +1,4 @@
 extends Node2D
-
-
 var index = 0;
 
 var dialogos = [
