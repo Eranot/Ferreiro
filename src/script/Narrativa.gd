@@ -24,6 +24,7 @@ var dialogos = [
 func start():
 	$TextInterfaceEngine.set_color(Color(255, 255, 255))
 	$TextInterfaceEngine.connect("buff_end", self, "onBuffEnd")
+	
 	_onNext()
 	
 func onBuffEnd():
@@ -47,13 +48,6 @@ func _onNext():
 	$TextInterfaceEngine.set_state($TextInterfaceEngine.STATE_OUTPUT)
 	$Done.hide()
 	$Next.hide()
-	
-	if(dialogos[index]['character'] == ODA):
-		$Char.texture = load('res://src/sprite/char/oda_borda.png')
-		$Nome.text = "Oda, o ferreiro"
-	else:
-		$Char.texture = load(character['img'])
-		$Nome.text = character['name']
 		
 	index += 1
 	

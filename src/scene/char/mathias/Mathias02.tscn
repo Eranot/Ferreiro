@@ -1,14 +1,15 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://src/sprite/background/inside/luzes_taverna.png" type="Texture" id=1]
 [ext_resource path="res://src/object/Dialogo.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/script/char/mathias/Mathias01.gd" type="Script" id=3]
+[ext_resource path="res://src/script/char/mathias/Mathias02.gd" type="Script" id=3]
 [ext_resource path="res://src/sprite/background/inside/background.png" type="Texture" id=4]
 [ext_resource path="res://src/sprite/background/inside/lareira.png" type="Texture" id=5]
 [ext_resource path="res://src/sprite/background/inside/fogo_lareira.png" type="Texture" id=6]
 [ext_resource path="res://src/sprite/background/inside/mesas.png" type="Texture" id=7]
 [ext_resource path="res://src/sprite/char/oda.png" type="Texture" id=8]
 [ext_resource path="res://src/sprite/background/inside/espada_berserker.png" type="Texture" id=9]
+[ext_resource path="res://src/sprite/char/mathias.png" type="Texture" id=10]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -126,7 +127,7 @@ texture = ExtResource( 4 )
 position = Vector2( 318.478, 60.3753 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="Lareira" type="Sprite" parent="."]
@@ -154,10 +155,16 @@ texture = ExtResource( 7 )
 position = Vector2( 382.893, 129.552 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 22 )
-frame = 6
+frame = 3
 speed_scale = 2.0
 playing = true
 
+[node name="Mathias" type="Sprite" parent="."]
+visible = false
+position = Vector2( 292.517, 228.957 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
 [node name="Dialogo" parent="." instance=ExtResource( 2 )]
 visible = false
-nextScene = "res://src/scene/char/mathias/Mathias02.tscn"
+nextScene = "res://src/scene/forja/ForjaEspada.tscn"

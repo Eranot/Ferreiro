@@ -8,6 +8,8 @@ var martelada3 = load("res://audio/martelada 3.wav")
 var marteladaErrada = load("res://audio/martelada 4.wav")
 var marteladaIndex = 0
 
+var portaAbrindo = load("res://audio/porta_abrindo.wav")
+
 # Called when the node enters the scene tree for the first time.
 func playDialogoMusic(delay = 0):
 	if(delay > 0):
@@ -29,6 +31,10 @@ func playMartelada():
 
 	$Environment.play()
 	marteladaIndex += 1
+
+func playPortaAbrindo(delay = 0):
+	$Environment.stream = portaAbrindo
+	$Environment.play()
 
 func pause():
 	$Music.pause()

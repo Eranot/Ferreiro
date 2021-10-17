@@ -54,6 +54,7 @@ func aumentarPontos(pontos):
 	emit_signal("aumentarPontos", pontos)
 
 func onFinishBatidas():
+	yield(get_tree().create_timer(2), "timeout")
 	emit_signal("onFinishFase")
 
 func getNewAlvoPosition():

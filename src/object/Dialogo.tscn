@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=1]
 [ext_resource path="res://src/script/Dialogo.gd" type="Script" id=2]
 [ext_resource path="res://font/Pixellari.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://src/sprite/dialogo/background_oda.png" type="Texture" id=4]
 [ext_resource path="res://src/sprite/char/oda.png" type="Texture" id=5]
+[ext_resource path="res://src/sprite/background/shade.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFontData" id=1]
 antialiased = false
@@ -31,13 +32,12 @@ font_data = ExtResource( 3 )
 position = Vector2( 0.0835218, 0 )
 script = ExtResource( 2 )
 
-[node name="Oda" type="Sprite" parent="."]
-position = Vector2( 92.924, 320.729 )
-scale = Vector2( 0.8, 0.8 )
-texture = ExtResource( 5 )
+[node name="Shade" type="Sprite" parent="."]
+position = Vector2( 512, 288 )
+texture = ExtResource( 6 )
 
 [node name="Char" type="Sprite" parent="."]
-position = Vector2( 929.924, 320.729 )
+position = Vector2( 110.924, 328.666 )
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 5 )
 
@@ -60,10 +60,10 @@ SCROLL_SKIPPED_LINES = true
 FONT = SubResource( 2 )
 
 [node name="Nome" type="Label" parent="."]
-margin_left = 867.0
-margin_top = 371.0
-margin_right = 986.0
-margin_bottom = 395.0
+margin_left = 42.0
+margin_top = 371.108
+margin_right = 250.0
+margin_bottom = 395.108
 custom_fonts/font = SubResource( 3 )
 text = "Nome"
 __meta__ = {

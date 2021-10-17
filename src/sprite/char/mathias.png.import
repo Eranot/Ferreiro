@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/background_oda.png-8b57bbd315610bea00cc000153bb6040.stex"
+path="res://.import/mathias.png-78cb0904b06d3a430bd34ba603221949.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/dialogo/background_oda.png"
-dest_files=[ "res://.import/background_oda.png-8b57bbd315610bea00cc000153bb6040.stex" ]
+source_file="res://src/sprite/char/mathias.png"
+dest_files=[ "res://.import/mathias.png-78cb0904b06d3a430bd34ba603221949.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

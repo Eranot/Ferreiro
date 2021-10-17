@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/background_oda.png-8b57bbd315610bea00cc000153bb6040.stex"
+path="res://.import/oda_borda.png-0a4b775124c74d48a091a903161f05bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/sprite/dialogo/background_oda.png"
-dest_files=[ "res://.import/background_oda.png-8b57bbd315610bea00cc000153bb6040.stex" ]
+source_file="res://src/sprite/char/oda_borda.png"
+dest_files=[ "res://.import/oda_borda.png-0a4b775124c74d48a091a903161f05bd.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
