@@ -1,7 +1,7 @@
 extends Node2D
 var index = 0;
 
-export(PackedScene) var nextScene
+export(String, FILE) var nextScene
 
 var backGroundOda = load('res://src/sprite/dialogo/background_oda.png')
 var backGroundOutro = load('res://src/sprite/dialogo/background_outro.png')
@@ -61,5 +61,5 @@ func _onNext():
 	index += 1
 	
 func _onDone():
-	get_tree().change_scene_to(nextScene)
+	get_tree().change_scene(nextScene)
 

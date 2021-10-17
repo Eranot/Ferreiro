@@ -12,6 +12,7 @@ export(float) var minDistanceBetweenPointsIncrease = 1
 var lastPosition = Vector2()
 
 signal aumentarPontos(pontos)
+signal onFinishFase
 
 func _ready():
 	randomize()
@@ -53,7 +54,7 @@ func aumentarPontos(pontos):
 	emit_signal("aumentarPontos", pontos)
 
 func onFinishBatidas():
-	print("Acabou as batidas, volta pra tela anterior")
+	emit_signal("onFinishFase")
 
 func getNewAlvoPosition():
 	var tries = 1
