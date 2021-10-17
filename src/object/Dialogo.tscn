@@ -1,14 +1,17 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://addons/GodotTIE/text_interface_engine.gd" type="Script" id=1]
 [ext_resource path="res://src/script/Dialogo.gd" type="Script" id=2]
 [ext_resource path="res://font/Pixellari.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/sprite/dialogo/background_oda.png" type="Texture" id=4]
+[ext_resource path="res://src/sprite/char/oda.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFontData" id=1]
+antialiased = false
 font_path = "res://font/Pixellari.ttf"
 
 [sub_resource type="DynamicFont" id=2]
-size = 40
+size = 29
 outline_color = Color( 0.823529, 0.156863, 0.156863, 1 )
 font_data = SubResource( 1 )
 
@@ -17,34 +20,49 @@ size = 23
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 21
+size = 35
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 21
+size = 35
 font_data = ExtResource( 3 )
 
 [node name="Dialogo" type="Node2D"]
 position = Vector2( 0.0835218, 0 )
 script = ExtResource( 2 )
 
+[node name="Oda" type="Sprite" parent="."]
+position = Vector2( 92.924, 320.729 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 5 )
+
+[node name="Char" type="Sprite" parent="."]
+position = Vector2( 929.924, 320.729 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 5 )
+
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+offset = Vector2( 512, 288 )
+
 [node name="TextInterfaceEngine" type="ReferenceRect" parent="."]
 margin_left = 45.0
-margin_top = 426.587
+margin_top = 427.0
 margin_right = 986.0
-margin_bottom = 517.587
+margin_bottom = 528.0
 border_width = 4.5
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+SCROLL_SKIPPED_LINES = true
 FONT = SubResource( 2 )
 
 [node name="Nome" type="Label" parent="."]
-margin_left = 46.6223
-margin_top = 397.109
-margin_right = 151.622
-margin_bottom = 421.109
+margin_left = 867.0
+margin_top = 371.0
+margin_right = 986.0
+margin_bottom = 395.0
 custom_fonts/font = SubResource( 3 )
 text = "Nome"
 __meta__ = {
@@ -53,25 +71,25 @@ __meta__ = {
 
 [node name="Done" type="LinkButton" parent="."]
 visible = false
-margin_left = 906.709
-margin_top = 531.215
-margin_right = 988.709
-margin_bottom = 553.215
+margin_left = 963.561
+margin_top = 529.261
+margin_right = 987.624
+margin_bottom = 565.261
 focus_mode = 2
 custom_fonts/font = SubResource( 4 )
-text = "Finalizar"
+text = ">"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Next" type="LinkButton" parent="."]
 visible = false
-margin_left = 909.665
-margin_top = 529.111
-margin_right = 988.665
-margin_bottom = 551.111
+margin_left = 964.009
+margin_top = 528.809
+margin_right = 988.071
+margin_bottom = 564.809
 custom_fonts/font = SubResource( 5 )
-text = "Avançar"
+text = ">"
 __meta__ = {
 "_edit_use_anchors_": false
 }

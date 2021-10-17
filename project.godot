@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Forja"
-run/main_scene="res://src/scene/Forja.tscn"
+config/name="Ferreiro"
+run/main_scene="res://src/scene/Outside.tscn"
 config/icon="res://icon.png"
 
 [display]
