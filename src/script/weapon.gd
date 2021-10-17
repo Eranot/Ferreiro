@@ -9,15 +9,16 @@ export(float) var timeDecreasePorBatida = 0.2
 export(float) var minDistanceBetweenPoints = 10
 export(float) var minDistanceBetweenPointsIncrease = 1
 
-var pontos = 0
 var lastPosition = Vector2()
+
+signal aumentarPontos(pontos)
 
 func _ready():
 	randomize()
 	
-	yield(get_tree().create_timer(2), "timeout")
+	yield(get_tree().create_timer(1), "timeout")
 	adicionarAlvoAleatorio(0)
-
+	
 func adicionarAlvoAleatorio(index):
 	
 	if(index >= numBatidas):
@@ -33,7 +34,6 @@ func adicionarAlvoAleatorio(index):
 	add_child(alvo)
 	
 	var timeToSpawnAgain = rand_range(minTimeToSpanAgain, maxTimeToSpanAgain)
-	print(timeToSpawnAgain)
 	
 	yield(get_tree().create_timer(timeToSpawnAgain), "timeout")
 	
@@ -50,8 +50,7 @@ func adicionarAlvoAleatorio(index):
 	minDistanceBetweenPoints += minDistanceBetweenPointsIncrease
 
 func aumentarPontos(pontos):
-	print("aumentando pontos")
-	self.pontos += pontos
+	emit_signal("aumentarPontos", pontos)
 
 func onFinishBatidas():
 	print("Acabou as batidas, volta pra tela anterior")
