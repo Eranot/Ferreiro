@@ -14,6 +14,10 @@ config/name="Ferreiro"
 run/main_scene="res://src/scene/Menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+MusicController="*res://autoload/MusicController.tscn"
+
 [display]
 
 window/size/height=576
