@@ -4,7 +4,7 @@
 [ext_resource path="res://src/script/weapon.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 20.7194, 64.3993 )
+extents = Vector2( 24.5973, 64.3993 )
 
 [node name="Machado" type="Node2D"]
 script = ExtResource( 2 )

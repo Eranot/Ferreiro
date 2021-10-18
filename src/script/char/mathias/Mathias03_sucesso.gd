@@ -14,7 +14,7 @@ func _ready():
 			'character': $Dialogo.ODA
 		},
 		{
-			'text': "Perfeito!.", 
+			'text': "Perfeito!", 
 			'character': $Dialogo.OUTRO
 		},
 		{

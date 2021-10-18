@@ -17,7 +17,7 @@ signal onFinishFase
 func _ready():
 	randomize()
 	
-	yield(get_tree().create_timer(1), "timeout")
+	yield(get_tree().create_timer(2), "timeout")
 	adicionarAlvoAleatorio(0)
 	
 func adicionarAlvoAleatorio(index):

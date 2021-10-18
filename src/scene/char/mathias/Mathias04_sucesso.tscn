@@ -127,7 +127,7 @@ texture = ExtResource( 4 )
 position = Vector2( 318.478, 60.3753 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 5
 playing = true
 
 [node name="Lareira" type="Sprite" parent="."]
@@ -139,7 +139,6 @@ texture = ExtResource( 5 )
 position = Vector2( 857.71, 189.971 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 17 )
-frame = 2
 playing = true
 
 [node name="Oda" type="Sprite" parent="."]
@@ -155,7 +154,6 @@ texture = ExtResource( 7 )
 position = Vector2( 382.893, 129.552 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 22 )
-frame = 3
 speed_scale = 2.0
 playing = true
 
@@ -166,4 +164,4 @@ texture = ExtResource( 10 )
 
 [node name="Dialogo" parent="." instance=ExtResource( 2 )]
 visible = false
-nextScene = "res://src/scene/Fim.tscn"
+nextScene = "res://src/scene/char/mathias/Mathias05_fim.tscn"

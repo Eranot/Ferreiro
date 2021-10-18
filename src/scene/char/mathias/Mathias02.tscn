@@ -127,7 +127,7 @@ texture = ExtResource( 4 )
 position = Vector2( 318.478, 60.3753 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 4
 playing = true
 
 [node name="Lareira" type="Sprite" parent="."]
@@ -139,6 +139,7 @@ texture = ExtResource( 5 )
 position = Vector2( 857.71, 189.971 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 17 )
+frame = 2
 playing = true
 
 [node name="Oda" type="Sprite" parent="."]
