@@ -13,7 +13,7 @@ func _ready():
 			'startDelay': 1
 		},
 		{
-			'text': "Alistado ao exército do rei desde jovem, e quando estava por volta dos seus 25 anos buscou glória e fama através de suas batalhas, mas acabou sendo derrotado em batalha sobrevivendo com poucos outros soldados.", 
+			'text': "Alistado ao exército do rei desde jovem, quando estava por volta dos seus 25 anos buscou glória e fama através de suas batalhas, mas acabou sendo derrotado, sobrevivendo com poucos outros soldados.", 
 			'character': $Dialogo.ODA
 		}
 	]

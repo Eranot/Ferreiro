@@ -15,7 +15,7 @@ func playDialogoMusic(delay = 0):
 	if(delay > 0):
 		yield(get_tree().create_timer(delay), "timeout")
 		
-	$Music.volume_db = -30
+	$Music.volume_db = -40
 	$Music.stream = dialogoMusic
 	$Music.play()
 

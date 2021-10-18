@@ -2,7 +2,7 @@
 
 [ext_resource path="res://font/Pixellari.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://src/script/Forja.gd" type="Script" id=2]
-[ext_resource path="res://src/scene/weapon/Sword.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/scene/weapon/Escudo.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/sprite/background/inside/forja.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -14,9 +14,9 @@ font_data = ExtResource( 1 )
 
 [node name="Forja" type="Area2D"]
 script = ExtResource( 2 )
-pontosParaGanhar = 34
-cenaGanhou = "res://src/scene/char/mathias/Mathias04_sucesso.tscn"
-cenaPerdeu = "res://src/scene/Menu.tscn"
+pontosParaGanhar = 27
+cenaGanhou = "res://src/scene/char/mathias/Mathias03_sucesso.tscn"
+cenaPerdeu = "res://src/scene/char/mathias/Mathias03_erro.tscn"
 
 [node name="background" type="Sprite" parent="."]
 position = Vector2( 512, 288 )
@@ -24,9 +24,8 @@ scale = Vector2( 4, 4 )
 texture = ExtResource( 4 )
 
 [node name="Arma" parent="." instance=ExtResource( 3 )]
-position = Vector2( 500.421, 304.389 )
+position = Vector2( 511.992, 288.268 )
 scale = Vector2( 4, 4 )
-numBatidas = 40
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 512, 288 )

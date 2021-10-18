@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/sprite/background/inside/luzes_taverna.png" type="Texture" id=1]
 [ext_resource path="res://src/object/Dialogo.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/script/char/mathias/Mathias02.gd" type="Script" id=3]
+[ext_resource path="res://src/script/char/mathias/Mathias03_sucesso.gd" type="Script" id=3]
 [ext_resource path="res://src/sprite/background/inside/background.png" type="Texture" id=4]
 [ext_resource path="res://src/sprite/background/inside/lareira.png" type="Texture" id=5]
 [ext_resource path="res://src/sprite/background/inside/fogo_lareira.png" type="Texture" id=6]
@@ -127,7 +127,7 @@ texture = ExtResource( 4 )
 position = Vector2( 318.478, 60.3753 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 1
 playing = true
 
 [node name="Lareira" type="Sprite" parent="."]
@@ -139,6 +139,7 @@ texture = ExtResource( 5 )
 position = Vector2( 857.71, 189.971 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 17 )
+frame = 2
 playing = true
 
 [node name="Oda" type="Sprite" parent="."]
@@ -154,16 +155,15 @@ texture = ExtResource( 7 )
 position = Vector2( 382.893, 129.552 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 22 )
-frame = 5
+frame = 2
 speed_scale = 2.0
 playing = true
 
 [node name="Mathias" type="Sprite" parent="."]
-visible = false
 position = Vector2( 292.517, 228.957 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 10 )
 
 [node name="Dialogo" parent="." instance=ExtResource( 2 )]
 visible = false
-nextScene = "res://src/scene/forja/ForjaEscudo.tscn"
+nextScene = "res://src/scene/forja/ForjaEspada.tscn"
