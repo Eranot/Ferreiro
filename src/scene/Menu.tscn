@@ -49,3 +49,4 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="Iniciar" to="." method="_on_Iniciar_pressed"]
+[connection signal="pressed" from="Creditos" to="." method="_on_Creditos_pressed"]

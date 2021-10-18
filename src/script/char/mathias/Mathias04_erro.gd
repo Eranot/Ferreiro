@@ -10,7 +10,7 @@ func _ready():
 	$Dialogo.dialogos = [
 		# Dilogos
 		{
-			'text': "Essa espada ficou das melhores.", 
+			'text': "Essa espada não ficou das melhores.", 
 			'character': $Dialogo.ODA
 		},
 		{

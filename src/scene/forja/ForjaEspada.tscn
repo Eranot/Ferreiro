@@ -16,7 +16,7 @@ font_data = ExtResource( 1 )
 script = ExtResource( 2 )
 pontosParaGanhar = 34
 cenaGanhou = "res://src/scene/char/mathias/Mathias04_sucesso.tscn"
-cenaPerdeu = "res://src/scene/Menu.tscn"
+cenaPerdeu = "res://src/scene/char/mathias/Mathias04_erro.tscn"
 
 [node name="background" type="Sprite" parent="."]
 position = Vector2( 512, 288 )

@@ -7,3 +7,8 @@ func _ready():
 func _on_Iniciar_pressed():
 	var scene = load("res://src/scene/Introducao.tscn")
 	get_tree().change_scene_to(scene)
+
+
+func _on_Creditos_pressed():
+	var scene = load("res://src/scene/Creditos.tscn")
+	get_tree().change_scene_to(scene)
